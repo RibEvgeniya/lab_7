@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Обновление клиента с id {{id}}</title>
+</head>
+<body>
+    <h1>Обновление клиента с id {{id}}</h1>
+    <form method='POST'>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit"> Сохранить</button>
+        <a href="/"> Вернуться</a>
+    </form>
+</body>
+</html>
+
